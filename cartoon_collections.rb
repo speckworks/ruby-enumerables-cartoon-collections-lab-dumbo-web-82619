@@ -1,4 +1,4 @@
-
+require "pry"
 
 def roll_call_dwarves(dwarves)
   dwarves.each_with_index {|dwarf, index| 
@@ -24,11 +24,11 @@ def long_planeteer_calls(calls_long)
 end
 
 
-def find_the_cheese(contains_cheddar, h = nil) 
+def find_the_cheese(contains_cheddar) 
       cheese_types = ["cheddar", "gouda", "camembert"]
-      cheese_types.find do |h|  if h == contains_cheddar 
-      end
-      puts "#{h}"
+      contains_cheddar.select do |item| 
+        cheese_types.include?(item)
+      end.first
   end
   
     
