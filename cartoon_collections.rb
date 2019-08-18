@@ -26,9 +26,9 @@ end
 
 def find_the_cheese(contains_cheddar) 
       cheese_types = ["cheddar", "gouda", "camembert"]
-      # cheese_types.find do |h|  if h == contains_cheddar 
-      # end
-      # puts "#{h}"
+      cheese_types.find do |h|  if h == contains_cheddar 
+      end
+      puts "#{h}"
   end
   
     
