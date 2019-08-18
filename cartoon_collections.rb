@@ -28,7 +28,7 @@ def find_the_cheese(contains_cheddar)
       cheese_types = ["cheddar", "gouda", "camembert"]
       contains_cheddar.select do |item| 
         cheese_types.include?(item)
-      end
+      end.first
   end
   
     
