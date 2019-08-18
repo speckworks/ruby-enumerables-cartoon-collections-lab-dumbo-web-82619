@@ -26,7 +26,6 @@ end
 
 def find_the_cheese(contains_cheddar) 
       cheese_types = ["cheddar", "gouda", "camembert"]
-      binding.pry
       contains_cheddar.select do |item| 
         cheese_types.include?(item)
       end
